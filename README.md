@@ -61,6 +61,12 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 ## 4 - Git from Basics to Advanced: Practical Guide for Developers
 
 - `git remote -v`: indica si hay una rama remota vinculada al repo local
+- `git remote set-url origin [URL]`: cambia la URL remota vinculada a un repo
+- `git branch`: lista las ramas locales
+- `git branch -r`: lista las ramas remotas
+- `git branch -a`: lista todas las ramas
+- `git branch -d [rama]`: Elimina una rama
+- `git push origin --delete feature/CAE-102` Elimina una rama remota
 
 
 
