@@ -58,3 +58,9 @@ Como documenta [flowsta](https://github.com/flowsta/github#rama-gh-pages), si nu
 
 Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.github.io/nombre-del-repositorio/
 
+## 4 - Git from Basics to Advanced: Practical Guide for Developers
+
+- `git remote -v`: indica si hay una rama remota vinculada al repo local
+
+
+
