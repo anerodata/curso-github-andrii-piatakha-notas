@@ -1,5 +1,4 @@
 Curso básico de Git y Github
-
 =======
 Git es una herramienta de control de versiones. Se utiliza para documentar procesos de trabajo. Github es un portal para subir a la red el repositorio creado previamente con Git con el objetivo de ponerlo en común con otras personas. Los apuntes de este fichero _markdown_ corresponden a:
 - Notas tomadas fruto de la experiencia
