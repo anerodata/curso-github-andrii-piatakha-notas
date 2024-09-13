@@ -60,6 +60,8 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 
 ## 4 - Git from Basics to Advanced: Practical Guide for Developers
 
+### 4.1 Comandos
+
 - `git remote -v`: indica si hay una rama remota vinculada al repo local
 - `git remote set-url origin [URL]`: cambia la URL remota vinculada a un repo
 - `git branch`: lista las ramas locales
@@ -73,10 +75,16 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git pull`: Es la combinación de los dos anteriores
 - `git push -u origin [rama]` pushea los cambios a una nueva rama remota recien creada
 - `git reset --hard HEAD~1`: restaura, recuperando el contenido de ficheros cambiados o borrados, y el contenido nuevo que se introdujo en el commit anterior. Situa el estado en el penúltimo commit, borrando el último. HEAD es el último commit
+- `git rebase`: Rebase changes from another branch 
+- `git pull --rebase [rama]`: `git fetch` + `git rebase` (mejor que el anterior). `git pull --rebase origin main` trae los cambios del repositorio remoto antes de poner nuestro codigo en lo alto del historial.
+- Después de resolver conflictos y añadir al _stage_ los cambios: `git rebase --continue`
+- `git rebase --abort`: Detiene el rebase
+- `git push -f`: Habitualmente tendremos que hacerlo si usamos rebase porque, rebase cambia el historial de git. También si hemos hecho un `git reset --hard HEAD~1`. Borrará cambios que están en el repositorio remoto. Se recomienda usar solo con las ramas personales.
+- `git push --force-with-lease`: Menos arriesgada. No sobreescribe trabajo en la rama remota si más commits fueron añadidos a la rama remota  por otro compañero. En este caso, el `push` fallará
 
-### 4.1 Rebase
+### 4.2 Consejos de Andrii Piatakha
 
-Consejos de Andrii Piatakha
+Relacionados con `git rabase`. Recominda rebase para no añadir un commit que no aporta información al hacer merge.
 
 1. Always create branches from master
 2. Force update and change commit history only on your branches
