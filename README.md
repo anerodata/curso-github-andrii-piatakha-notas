@@ -72,6 +72,7 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git fetch`: Trae los cambios al estado local, `git merge` después integraría los cambios traídos en el código
 - `git pull`: Es la combinación de los dos anteriores
 - `git push -u origin [rama]` pushea los cambios a una nueva rama remota recien creada
+- `git reset --hard HEAD~1`: restaura, recuperando el contenido de ficheros cambiados o borrados, y el contenido nuevo que se introdujo en el commit anterior. Situa el estado en el penúltimo commit, borrando el último. HEAD es el último commit
 
 
 
