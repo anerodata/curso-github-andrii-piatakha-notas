@@ -4,6 +4,7 @@ Git es una herramienta de control de versiones. Se utiliza para documentar proce
 - Notas tomadas fruto de la experiencia
 - El curso de Udemy [Git from Basics to Advanced: Practical Guide for Developers](https://www.udemy.com/course/git-learnit/?couponCode=ST17MT91224A)
 
+
 ## 1 - Comandos básicos
 1. `git init`: sirve para iniciar git dentro de un directorio
 
