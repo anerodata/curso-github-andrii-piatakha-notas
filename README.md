@@ -74,5 +74,13 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git push -u origin [rama]` pushea los cambios a una nueva rama remota recien creada
 - `git reset --hard HEAD~1`: restaura, recuperando el contenido de ficheros cambiados o borrados, y el contenido nuevo que se introdujo en el commit anterior. Situa el estado en el penúltimo commit, borrando el último. HEAD es el último commit
 
+### 4.1 Rebase
+
+Consejos de Andrii Piatakha
+
+1. Always create branches from master
+2. Force update and change commit history only on your branches
+3. Use --force-with-lease instead of -f
+4. Always rebase on the origin master branch before creating a pull request
 
 
