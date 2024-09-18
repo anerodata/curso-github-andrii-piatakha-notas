@@ -96,6 +96,10 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git stash apply stash@{1}`: Aplica los cambios del puesto 1 en la pila (stack). Si tienes cambios en el stage area git te pedirá que commitees o stahees los cambios porque se borrarían al hacer merge
 - `git stash save "mis cambios de prueba"`: Guardaría en stash los cambios con ese nombre
 - `git stash pop`: Aplica el último stash y lo elimina de la lista. También funciona con los ID
+- `git stash -u`: Guardaría en el stash los elementos no trackeados, los que aun no están en el working tree porque se acaban de crear
+- `git stash -a`: Guardaría en el stash todo, los elementos no trackeados y los cambios en los ficheros ignorados por git
+- `git stash branch [new_branch]`: Cambia a una nueva rama e introduce los cambios almacenados en el último stash. Con un ID introduciría los cambios guardados en el stash del ID
+- `git stash drop stash@{0}`: Elimina el stash 0
 
 ### 4.2 Consejos de Andrii Piatakha
 
