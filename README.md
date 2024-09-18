@@ -91,6 +91,8 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git fetch --all`: Trae el estado más fresco del repositorio remoto. `git reset --hard origin/[branch]` Establecemos el estado de nuestra rama al mismo estado al que esta la remota
 - `git stash`: Esconde los cambios en el working tree o en el stage area
 - `git stash`: Aplica dichos cambios del working tree
+- `git stash list`: Lista la pila (stack) de stashes
+- `git stash apply stash@{1}`: Aplica los cambios del puesto 1 en la pila (stack)
 
 ### 4.2 Consejos de Andrii Piatakha
 
@@ -100,5 +102,3 @@ Relacionados con `git rabase`. Recominda rebase para no añadir un commit que no
 2. Force update and change commit history only on your branches
 3. Use `--force-with-lease` instead of -f
 4. Always rebase on the origin master branch before creating a pull request
-
-
