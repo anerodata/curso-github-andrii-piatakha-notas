@@ -89,6 +89,8 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git reset 5bbce --mixed` (default): retorna el estado de HEAD a ese commit, colocando en el working area los cambios de los commits posteriores, por lo tanto habría que hacer un git add y después commit.
 - `git reset 5bbce --hard`:  retorna el estado de HEAD a ese commit, eliminando los cambios de los commits posteriores, por lo tanto habría que hacer un commit
 - `git fetch --all`: Trae el estado más fresco del repositorio remoto. `git reset --hard origin/[branch]` Establecemos el estado de nuestra rama al mismo estado al que esta la remota
+- `git stash`: Esconde los cambios en el working tree
+- `git stash`: Aplica dichos cambios del working tree
 
 ### 4.2 Consejos de Andrii Piatakha
 
