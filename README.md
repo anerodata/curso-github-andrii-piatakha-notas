@@ -100,6 +100,7 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git stash -a`: Guardaría en el stash todo, los elementos no trackeados y los cambios en los ficheros ignorados por git
 - `git stash branch [new_branch]`: Cambia a una nueva rama e introduce los cambios almacenados en el último stash. Con un ID introduciría los cambios guardados en el stash del ID
 - `git stash drop stash@{0}`: Elimina el stash 0
+- `git stash clear`: Limpia la pila de stashes
 
 ### 4.2 Consejos de Andrii Piatakha
 
