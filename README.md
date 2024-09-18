@@ -71,6 +71,8 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git push origin --delete feature/CAE-102` Elimina una rama remota
 - `git switch -c [new_branch]`: Crea una nueva arama y te cambia a ella
 - `git switch -`: Te lleva a main o master
+- `git commit -a`: Añade todo al stage y commitea
+- `git commit --amend --no-edit`: Modifica el commit sin cambiar el mensaje
 - `git fetch`: Trae los cambios al estado local, `git merge` después integraría los cambios traídos en el código
 - `git pull`: Es la combinación de los dos anteriores
 - `git push -u origin [rama]` pushea los cambios a una nueva rama remota recien creada
@@ -79,6 +81,8 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git pull --rebase [rama]`: `git fetch` + `git rebase` (mejor que el anterior). `git pull --rebase origin main` trae los cambios del repositorio remoto antes de poner nuestro codigo en lo alto del historial.
 - Después de resolver conflictos y añadir al _stage_ los cambios: `git rebase --continue`
 - `git rebase --abort`: Detiene el rebase
+- `git rebase -i HEAD~3`: Hace un rebase interactivo de los últimos 3 commits. Permite por ejem cambiar el nombre de un commit pasado. Buena práctica: Modificar commits de mi rama, pero no del arbol de main por ejemplo. También podemos hacer squash con este modo.
+- prueba
 - `git push -f`: Habitualmente tendremos que hacerlo si usamos rebase porque, rebase cambia el historial de git. También si hemos hecho un `git reset --hard HEAD~1`. Borrará cambios que están en el repositorio remoto. Se recomienda usar solo con las ramas personales.
 - `git push --force-with-lease`: Menos arriesgada. No sobreescribe trabajo en la rama remota si más commits fueron añadidos a la rama remota  por otro compañero. En este caso, el `push` fallará
 
