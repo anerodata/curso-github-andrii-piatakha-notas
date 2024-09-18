@@ -98,7 +98,7 @@ Relacionados con `git rabase`. Recominda rebase para no añadir un commit que no
 
 1. Always create branches from master
 2. Force update and change commit history only on your branches
-3. Use --force-with-lease instead of -f
+3. Use `--force-with-lease` instead of -f
 4. Always rebase on the origin master branch before creating a pull request
 
 
