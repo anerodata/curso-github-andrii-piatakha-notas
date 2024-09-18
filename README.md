@@ -101,6 +101,13 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git stash branch [new_branch]`: Cambia a una nueva rama e introduce los cambios almacenados en el último stash. Con un ID introduciría los cambios guardados en el stash del ID
 - `git stash drop stash@{0}`: Elimina el stash 0
 - `git stash clear`: Limpia la pila de stashes
+- `git reglog`: Cuando trabajamos con git y movemos punteros, git silenciosamente graba cual es nuestro puntero HEAD y como luce. Cada vez que creamos un nuevo snapshot o cambiamos ramas, el reflog se actualiza. Dicho comando muestra información sobre el reflog.
+- `git log -g`: Muestra el historial de commits con la referencia de reflog
+Hacemos un reset hard a un commit anterior
+- `g branch lost_changes [sha_commit]`: Crearia una rama lost_changes con los commits borrados en un reset hard El sha commit lo hemos recuperado con git log -g
+- `g log lost_changes`: nos mostraria el log de esa rama
+- `git reflog --since="1.hour"`: Muestra el reflog desde hace una hora. La info para reflog se almacena durante 90 días
+- `git reset --hard HEAD@{7}` Habiendo consultado el reflog con el commit anterior esto podriamos ejecutar este comando siendo 7 el estado del HEAD que queremos recuperar
 
 ### 4.2 Consejos de Andrii Piatakha
 
