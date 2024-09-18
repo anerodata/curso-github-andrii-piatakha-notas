@@ -85,6 +85,9 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - prueba
 - `git push -f`: Habitualmente tendremos que hacerlo si usamos rebase porque, rebase cambia el historial de git. También si hemos hecho un `git reset --hard HEAD~1`. Borrará cambios que están en el repositorio remoto. Se recomienda usar solo con las ramas personales.
 - `git push --force-with-lease`: Menos arriesgada. No sobreescribe trabajo en la rama remota si más commits fueron añadidos a la rama remota  por otro compañero. En este caso, el `push` fallará
+- `git reset 5bbce --soft`:  retorna el estado de HEAD a ese commit, colocando en el stage area los cambios de los commits posteriores, por lo tanto habría que hacer un commit
+- `git reset 5bbce --mixed` (default): retorna el estado de HEAD a ese commit, colocando en el working area los cambios de los commits posteriores, por lo tanto habría que hacer un git add y después commit.
+- `git reset 5bbce --hard`:  retorna el estado de HEAD a ese commit, eliminando los cambios de los commits posteriores, por lo tanto habría que hacer un commit
 
 ### 4.2 Consejos de Andrii Piatakha
 
