@@ -107,7 +107,7 @@ Hacemos un reset hard a un commit anterior
 - `g branch lost_changes [sha_commit]`: Crearia una rama lost_changes con los commits borrados en un reset hard El sha commit lo hemos recuperado con git log -g
 - `g log lost_changes`: nos mostraria el log de esa rama
 - `git reflog --since="1.hour"`: Muestra el reflog desde hace una hora. La info para reflog se almacena durante 90 días
-- `git reset --hard HEAD@{7}` Habiendo consultado el reflog con el commit anterior esto podriamos ejecutar este comando siendo 7 el estado del HEAD que queremos recuperar
+- `git reset --hard HEAD@{7}` Habiendo consultado el reflog con el commit anterior, podriamos ejecutar este comando siendo 7 el estado del HEAD que queremos recuperar
 
 ### 4.2 Consejos de Andrii Piatakha
 
