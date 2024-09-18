@@ -88,11 +88,12 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git reset 5bbce --soft`:  retorna el estado de HEAD a ese commit, colocando en el stage area los cambios de los commits posteriores, por lo tanto habría que hacer un commit
 - `git reset 5bbce --mixed` (default): retorna el estado de HEAD a ese commit, colocando en el working area los cambios de los commits posteriores, por lo tanto habría que hacer un git add y después commit.
 - `git reset 5bbce --hard`:  retorna el estado de HEAD a ese commit, eliminando los cambios de los commits posteriores, por lo tanto habría que hacer un commit
+- `git reset --hard HEAD`: resetea el estado de la rama a como está en el puntero del HEAD
 - `git fetch --all`: Trae el estado más fresco del repositorio remoto. `git reset --hard origin/[branch]` Establecemos el estado de nuestra rama al mismo estado al que esta la remota
 - `git stash`: Esconde los cambios en el working tree o en el stage area
 - `git stash`: Aplica dichos cambios del working tree
 - `git stash list`: Lista la pila (stack) de stashes
-- `git stash apply stash@{1}`: Aplica los cambios del puesto 1 en la pila (stack)
+- `git stash apply stash@{1}`: Aplica los cambios del puesto 1 en la pila (stack). Si tienes cambios en el stage area git te pedirá que commitees o stahees los cambios porque se borrarían al hacer merge
 
 ### 4.2 Consejos de Andrii Piatakha
 
