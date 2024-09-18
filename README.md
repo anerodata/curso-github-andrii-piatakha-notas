@@ -94,6 +94,7 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git stash`: Aplica dichos cambios del working tree
 - `git stash list`: Lista la pila (stack) de stashes
 - `git stash apply stash@{1}`: Aplica los cambios del puesto 1 en la pila (stack). Si tienes cambios en el stage area git te pedirá que commitees o stahees los cambios porque se borrarían al hacer merge
+- `git stash save "mis cambios de prueba"`: Guardaría en stash los cambios con ese nombre
 
 ### 4.2 Consejos de Andrii Piatakha
 
