@@ -99,6 +99,8 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git stash -u`: Guardaría en el stash los elementos no trackeados, los que aun no están en el working tree porque se acaban de crear
 - `git stash -a`: Guardaría en el stash todo, los elementos no trackeados y los cambios en los ficheros ignorados por git
 - `git stash branch [new_branch]`: Cambia a una nueva rama e introduce los cambios almacenados en el último stash. Con un ID introduciría los cambios guardados en el stash del ID
+- `git stash show`: Muestra los ficheros que cambia el último stash almacenado. `git stash show stash@{1}` o directamente `git stash show 1` lo haría con un stash concreto
+- `git stash show -p`: Muestra la diferencia del último stash almacenado. `git stash show -p stash@{1}` o directamente `git stash show -p 1` lo haría con un stash concreto
 - `git stash drop stash@{0}`: Elimina el stash 0
 - `git stash clear`: Limpia la pila de stashes
 - `git reglog`: Cuando trabajamos con git y movemos punteros, git silenciosamente graba cual es nuestro puntero HEAD y como luce. Cada vez que creamos un nuevo snapshot o cambiamos ramas, el reflog se actualiza. Dicho comando muestra información sobre el reflog.
