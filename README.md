@@ -70,7 +70,7 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git branch -d [rama]`: Elimina una rama
 - `git push origin --delete feature/CAE-102` Elimina una rama remota
 - `git switch -c [new_branch]`: Crea una nueva arama y te cambia a ella
-- `git switch -`: Te lleva a main o master
+- `git switch -`: Te lleva al último estado de la rama en la que estés
 - `git commit -a`: Añade todo al stage y commitea
 - `git commit --amend --no-edit`: Modifica el commit sin cambiar el mensaje
 - `git fetch`: Trae los cambios al estado local, `git merge` después integraría los cambios traídos en el código
