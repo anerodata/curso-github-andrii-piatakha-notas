@@ -111,6 +111,11 @@ Hacemos un reset hard a un commit anterior
 - `g log lost_changes`: nos mostraria el log de esa rama
 - `git reflog --since="1.hour"`: Muestra el reflog desde hace una hora. La info para reflog se almacena durante 90 días
 - `git reset --hard HEAD@{7}` Habiendo consultado el reflog con el commit anterior, podriamos ejecutar este comando siendo 7 el estado del HEAD que queremos recuperar
+- `git cherry-pick [hash_commit] [hash_commit]`: Crearía un nuevo commit con el resultado de los dos commits mencionados en el comando
+Reglas del cherry-pick:
+1. Mejor merge o rebase cuando sea posible
+2. Evitar crear duplicaciones: es OK crear un cherry pick de una rama que se va a borrar o va a eliminar esos commits. El problema es tener dos ramas con commits duplicados
+3. A veces mejora el resultado usar cherry-pick así: `git cherry-pick-x [hash_commit]` porque añade información al commit que va a crear el cherry-pick
 
 ### 4.2 Consejos de Andrii Piatakha
 
