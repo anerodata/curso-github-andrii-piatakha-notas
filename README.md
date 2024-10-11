@@ -96,6 +96,11 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git reset 5bbce --hard`:  retorna el estado de HEAD a ese commit, eliminando los cambios de los commits posteriores, por lo tanto habría que hacer un commit
 - `git reset --hard HEAD`: resetea el estado de la rama a como está en el puntero del HEAD
 - `git fetch --all`: Trae el estado más fresco del repositorio remoto. `git reset --hard origin/[branch]` Establecemos el estado de nuestra rama al mismo estado al que esta la remota
+
+#### `git stash`
+
+![git reset](https://github.com/anerodata/curso-github-andrii-piatakha-notas/blob/main/img/git-stash.png)
+
 - `git stash`: Esconde los cambios en el working tree o en el stage area
 - `git stash`: Aplica dichos cambios del working tree
 - `git stash list`: Lista la pila (stack) de stashes
@@ -109,6 +114,15 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git stash show -p`: Muestra la diferencia del último stash almacenado. `git stash show -p stash@{1}` o directamente `git stash show -p 1` lo haría con un stash concreto
 - `git stash drop stash@{0}`: Elimina el stash 0
 - `git stash clear`: Limpia la pila de stashes
+
+#### Stack lifo principle
+
+![git reset](https://github.com/anerodata/curso-github-andrii-piatakha-notas/blob/main/img/stack-lifo-principle.png)
+
+#### `git reflog`
+
+![git reset](https://github.com/anerodata/curso-github-andrii-piatakha-notas/blob/main/img/git-reflog.png)
+
 - `git reglog`: Cuando trabajamos con git y movemos punteros, git silenciosamente graba cual es nuestro puntero HEAD y como luce. Cada vez que creamos un nuevo snapshot o cambiamos ramas, el reflog se actualiza. Dicho comando muestra información sobre el reflog.
 - `git log -g`: Muestra el historial de commits con la referencia de reflog
 Hacemos un reset hard a un commit anterior
@@ -116,6 +130,11 @@ Hacemos un reset hard a un commit anterior
 - `g log lost_changes`: nos mostraria el log de esa rama
 - `git reflog --since="1.hour"`: Muestra el reflog desde hace una hora. La info para reflog se almacena durante 90 días
 - `git reset --hard HEAD@{7}` Habiendo consultado el reflog con el commit anterior, podriamos ejecutar este comando siendo 7 el estado del HEAD que queremos recuperar
+
+#### `git reset`
+
+![git reset](https://github.com/anerodata/curso-github-andrii-piatakha-notas/blob/main/img/git-reset.png)
+
 - `git cherry-pick [hash_commit] [hash_commit]`: Crearía un nuevo commit (con un nuevo hash) con el resultado de los dos commits mencionados en el comando
 Reglas del cherry-pick:
 1. Mejor merge o rebase cuando sea posible
