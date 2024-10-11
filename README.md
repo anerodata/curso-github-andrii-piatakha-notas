@@ -80,7 +80,7 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 
 #### `git reset`
 
-<img src="https://github.com/anerodata/curso-github-andrii-piatakha-notas/blob/main/img/git-reset.png" style="max-width: 450px; !important" />
+![git reset](https://github.com/anerodata/curso-github-andrii-piatakha-notas/blob/main/img/git-reset.png)
 
 - `git reset --hard HEAD~1`: restaura, recuperando el contenido de ficheros cambiados o borrados, y el contenido nuevo que se introdujo en el commit anterior. Situa el estado en el penúltimo commit, borrando el último. HEAD es el último commit
 - `git rebase`: Rebase changes from another branch 
