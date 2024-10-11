@@ -77,6 +77,9 @@ Ahora tendríamos el proyecto web renderizando en https://nombre-de-usuario.gith
 - `git fetch`: Trae los cambios al estado local, `git merge` después integraría los cambios traídos en el código
 - `git pull`: Es la combinación de los dos anteriores
 - `git push -u origin [rama]` pushea los cambios a una nueva rama remota recien creada
+
+#### `git reset`
+<img src="https://github.com/anerodata/curso-github-andrii-piatakha-notas/blob/main/img/git-reset.png" style="max-width: 450px;" />
 - `git reset --hard HEAD~1`: restaura, recuperando el contenido de ficheros cambiados o borrados, y el contenido nuevo que se introdujo en el commit anterior. Situa el estado en el penúltimo commit, borrando el último. HEAD es el último commit
 - `git rebase`: Rebase changes from another branch 
 - `git pull --rebase [rama]`: `git fetch` + `git rebase` (mejor que el anterior). `git pull --rebase origin main` trae los cambios del repositorio remoto antes de poner nuestro codigo en lo alto del historial.
