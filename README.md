@@ -139,7 +139,7 @@ Hacemos un reset hard a un commit anterior
 Reglas del cherry-pick:
 1. Mejor merge o rebase cuando sea posible
 2. Evitar crear duplicaciones: es OK crear un cherry pick de una rama que se va a borrar o va a eliminar esos commits. El problema es tener dos ramas con commits duplicados
-3. A veces mejora el resultado usar cherry-pick así: `git cherry-pick-x [hash_commit]` porque añade información al commit que va a crear el cherry-pick
+3. A veces mejora el resultado usar cherry-pick así: `git cherry-pick -x [hash_commit]` porque añade información al commit que va a crear el cherry-pick
 
 ### 4.2 Consejos de Andrii Piatakha
 
